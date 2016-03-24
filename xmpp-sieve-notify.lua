@@ -4,13 +4,13 @@ local http=require "socket.http"
 local ltn12=require "ltn12"
 local mime=require "mime"
 
-local conf=require "conf"
+require "config"
 
 -- vars
 
-local jid=conf.jid
-local passwd=conf.jid
-local url=conf.url
+local jid=config.jid
+local passwd=config.passwd
+local url=config.url
 
 -- arg check
 if #arg ~= 1 then
